@@ -1,0 +1,83 @@
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+    .calcul {
+      border: 1px solid #d1d1d1;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 
+      7px -6px 5px 3px rgb(255, 255, 255), 0px 0px 0px 0px red,15px -5px 5px 10px #000000,
+        0px 0px 0px 0px #000;
+      background: #2c3639a6;
+  
+      .titre {
+        margin-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+      }
+  
+      .resultat {
+        width: 93.5%;
+        height: 50px;
+        border: 1px solid #ccc;
+        color: #f8f4f4;
+        background: #1a1919c2;
+        text-align: right;
+        padding: 10px;
+        font-size: 1.5em;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 0px 5px blue;
+      }
+  
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        
+        button {
+          border: none;
+          color: white;
+          padding: 10px;
+          font-size: 1.2em;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          box-shadow: 2px 3px 0px 0px blue;
+  
+          &:hover {
+            background-color: #b30600;
+          }
+  
+          &.numero {
+            background-color: #6c757d;
+            &:hover {
+              background-color: #545b62;
+            }
+          }
+  
+          &.operations {
+            background-color: #28a745;
+            &:hover {
+              background-color: #1e7e34;
+            }
+          }
+  
+          &.clear, &.egal {
+            background-color: #dc3545;
+            &:hover {
+              background-color: #c82333;
+            }
+          }
+          &.clear {
+            font-weight: bold; // Style gras pour les boutons "Effacer" et "Effacer Entrée"
+          }
+        }
+      }
+    }
+  }
